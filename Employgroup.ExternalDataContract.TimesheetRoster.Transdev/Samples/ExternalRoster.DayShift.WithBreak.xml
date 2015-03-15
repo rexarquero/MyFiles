@@ -1,0 +1,34 @@
+<!--
+DAY SHIFT WITH BREAK
+
+This represent a Timesheet Roster for an employee under Drivers Position on 1st Jan 2015.
+The shift start from 9:00 - 17:30 with a 30 minutes break between 12:00 - 12:30.
+-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<ExternalRoster>
+  <RosteredDays>
+    <ExternalRosteredDay>
+      <EmployerToken>9C8A900D-C884-4505-9E6D-8588CD388115</EmployerToken>
+      <Abn>40079303816</Abn>
+      <EmployeeCode>V00033</EmployeeCode>
+      <EmployeeToken>66A0B6FE-C799-403F-937C-4B9ECBBE9739</EmployeeToken>
+      <PositionName>Drivers</PositionName>
+      <RosteredDate>2015-01-01</RosteredDate>
+      <RosteredTasks>
+        <ExternalRosteredTask>
+          <StartTime>2015-01-01T09:00:00</StartTime>
+          <EndTime>2015-01-01T17:30:00</EndTime>
+          <EntryType>Other</EntryType>
+          <SubRosteredTasks>
+            <ExternalRosteredTask>
+              <StartTime>2015-01-01T12:00:00</StartTime>
+              <EndTime>2015-01-01T12:30:00</EndTime>
+              <EntryType>Break</EntryType>
+            </ExternalRosteredTask>
+          </SubRosteredTasks>
+        </ExternalRosteredTask>
+      </RosteredTasks>
+    </ExternalRosteredDay>
+  </RosteredDays>
+</ExternalRoster>

@@ -1,0 +1,29 @@
+<!--
+ROSTERED DAY OFF
+
+This represent a Rostered Day Off (RDO) of an employee under Drivers Position on 1st Jan 2015.
+-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<ExternalRoster>
+  <RosteredDaysOff>
+    <ExternalRosteredDayOff> <!-- RDO with only date -->
+      <EmployerToken>9C8A900D-C884-4505-9E6D-8588CD388115</EmployerToken>
+      <Abn>40079303816</Abn>
+      <EmployeeCode>V00033</EmployeeCode>
+      <EmployeeToken>66A0B6FE-C799-403F-937C-4B9ECBBE9739</EmployeeToken>
+      <PositionName>Drivers</PositionName>
+      <RosteredDate>2015-01-01</RosteredDate> <!-- The system will treat 2015-01-01T00:00 to 2015-01-01T23:99:99 as RDO -->
+    </ExternalRosteredDayOff>
+    <ExternalRosteredDayOff><!-- RDO with date and time (end time expand to the next day) -->
+      <EmployerToken>9C8A900D-C884-4505-9E6D-8588CD388115</EmployerToken>
+      <Abn>40079303816</Abn>
+      <EmployeeCode>V00033</EmployeeCode>
+      <EmployeeToken>66A0B6FE-C799-403F-937C-4B9ECBBE9739</EmployeeToken>
+      <PositionName>Drivers</PositionName>
+      <RosteredDate>2015-01-01</RosteredDate> <!-- The system will treat 2015-01-01T18:00 to 2015-01-01T02:30 as RDO -->
+      <StartTime>2015-01-01T18:00</StartTime>
+      <EndTime>2015-01-01T02:30</EndTime>
+    </ExternalRosteredDayOff>
+  </RosteredDaysOff>
+</ExternalRoster>

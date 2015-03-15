@@ -1,0 +1,49 @@
+<!--
+SPLIT SHIFTS WITH BREAK
+
+This represent a Timesheet Roster for an employee under Drivers Position on 1st Jan 2015.
+The work start from 9:00 - 19:30 with a 30 minutes gap between 2 shifts and break for each shift.
+-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<ExternalRoster>
+  <RosteredDays>
+    <ExternalRosteredDay>
+      <EmployerToken>9C8A900D-C884-4505-9E6D-8588CD388115</EmployerToken>
+      <Abn>40079303816</Abn>
+      <EmployeeCode>V00033</EmployeeCode>
+      <EmployeeToken>66A0B6FE-C799-403F-937C-4B9ECBBE9739</EmployeeToken>
+      <PositionName>Drivers</PositionName>
+      <RosteredDate>2015-01-01</RosteredDate>
+      <RosteredTasks>
+        <ExternalRosteredTask> <!-- Main -->
+          <StartTime>2015-01-01T09:00:00</StartTime>
+          <EndTime>2015-01-01T19:30:00</EndTime>
+          <EntryType>Other</EntryType>
+          <SubRosteredTasks> 
+            <ExternalRosteredTask> <!-- First shift -->
+              <StartTime>2015-01-01T09:00:00</StartTime>
+              <EndTime>2015-01-01T13:00:00</EndTime>
+              <EntryType>FirstShift</EntryType>
+              <SubRosteredTasks>
+                <StartTime>2015-01-01T11:00:00</StartTime>
+                <EndTime>2015-01-01T11:30:00</EndTime>
+                <EntryType>Break</EntryType>
+              </SubRosteredTasks>
+            </ExternalRosteredTask>
+            <ExternalRosteredTask> <!-- Second shift -->
+              <StartTime>2015-01-01T13:30:00</StartTime>
+              <EndTime>2015-01-01T17:30:00</EndTime>
+              <EntryType>SecondShift</EntryType>
+              <SubRosteredTasks>
+                <StartTime>2015-01-01T15:00:00</StartTime>
+                <EndTime>2015-01-01T15:30:00</EndTime>
+                <EntryType>Break</EntryType>
+              </SubRosteredTasks>
+            </ExternalRosteredTask>
+          </SubRosteredTasks>
+        </ExternalRosteredTask>
+      </RosteredTasks>
+    </ExternalRosteredDay>
+  </RosteredDays>
+</ExternalRoster>
