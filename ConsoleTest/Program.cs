@@ -55,10 +55,17 @@ namespace ConsoleTest
                 //}
 
                 var transformer = new TransdevTransformer();
+                transformer.OnBatchCountReached += new MyEventHandler(OnBatchCountReached);
                 var obj = transformer.XmlReaderToExternalTimesheets(reader);
 
             }
             Console.ReadLine();
+        }
+
+        static void OnBatchCountReached(object source, MyEventArgs e)
+        {
+            var timesheets = e.GetTimesheets();
+            //PRocess this timesheet for API
         }
 
         private static void WriteToOutputFile(string text, bool isXML = true)
